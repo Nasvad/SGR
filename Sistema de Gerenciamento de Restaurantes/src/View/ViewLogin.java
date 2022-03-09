@@ -34,9 +34,18 @@ public class ViewLogin extends javax.swing.JFrame {
 
         btEntrar.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
         btEntrar.setText("Entrar");
+        btEntrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btEntrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btEntrarActionPerformed(evt);
+            }
+        });
+        btEntrar.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                btEntrarKeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                btEntrarKeyTyped(evt);
             }
         });
 
@@ -120,6 +129,14 @@ public class ViewLogin extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, "Login ou Senha inválidos!");
         }
     }//GEN-LAST:event_btEntrarActionPerformed
+
+    private void btEntrarKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btEntrarKeyTyped
+        
+    }//GEN-LAST:event_btEntrarKeyTyped
+
+    private void btEntrarKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btEntrarKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btEntrarKeyPressed
 
     public static void main(String args[]) {
 

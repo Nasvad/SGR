@@ -31,6 +31,11 @@ public class ViewInserirDados extends javax.swing.JFrame {
 
         cbPratosDefauts.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
         cbPratosDefauts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione...", " " }));
+        cbPratosDefauts.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbPratosDefautsActionPerformed(evt);
+            }
+        });
 
         btInserir.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
         btInserir.setText("Inserir");
@@ -88,7 +93,7 @@ public class ViewInserirDados extends javax.swing.JFrame {
                 .addComponent(ctPratoCustomizado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btInserir)
-                .addContainerGap(272, Short.MAX_VALUE))
+                .addContainerGap(270, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -108,8 +113,12 @@ public class ViewInserirDados extends javax.swing.JFrame {
 
     private void btInserirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btInserirActionPerformed
         //Enviar dados para o banco
-
+                  
     }//GEN-LAST:event_btInserirActionPerformed
+
+    private void cbPratosDefautsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbPratosDefautsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbPratosDefautsActionPerformed
 
     public static void main(String args[]) {
 

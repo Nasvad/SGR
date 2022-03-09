@@ -82,7 +82,7 @@
                   <Component id="ctPratoCustomizado" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="btInserir" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="272" max="32767" attributes="0"/>
+                  <EmptySpace pref="270" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -123,6 +123,9 @@
               </StringArray>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbPratosDefautsActionPerformed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
